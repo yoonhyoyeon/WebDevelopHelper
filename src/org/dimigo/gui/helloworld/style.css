@@ -1,0 +1,28 @@
+.container {
+    -fx-font-family: sans-serif;
+    -fx-background-color: #fff;
+}
+.htmlList {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 3, 0, 0, 0);
+    -fx-background-color: #fff;
+}
+.webView {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 3, 0, 0, 0);
+    -fx-background-color: #fff;
+}
+.header {
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 3, 0, 0, 0);
+    -fx-background-color: #fff;
+}
+.category {
+    -fx-background-color: #149ae8;
+    -fx-text-fill: #fff;
+    -fx-transition: all .3s ease;
+}
+.category:hover {
+    -fx-background-color: #128ed7;
+}
+.category.active {
+    -fx-background-color: #1284cd;
+}

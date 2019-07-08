@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="820.0" styleClass="container" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dimigo.gui.helloworld.Controller">
+   <children>
+      <Pane layoutY="-1.0" prefHeight="46.0" prefWidth="820.0" styleClass="header" stylesheets="@style.css">
+         <children>
+            <Label layoutX="365.0" layoutY="9.0" prefHeight="29.0" prefWidth="90.0" styleClass="text" stylesheets="@style.css" text="웹 개발 검색기" textAlignment="CENTER">
+               <font>
+                  <Font name="NanumSquare ExtraBold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="search_input" layoutX="643.0" layoutY="14.0" prefHeight="23.0" prefWidth="124.0" />
+            <Button fx:id="search_btn" layoutX="767.0" layoutY="14.0" mnemonicParsing="false" onAction="#searchSubmit" text="검색" />
+         </children>
+      </Pane>
+      <Button fx:id="btn_click" layoutX="6.0" layoutY="476.0" mnemonicParsing="false" onAction="#handleAction" prefHeight="40.0" prefWidth="402.0" styleClass="category" stylesheets="@style.css" text="HTML" textAlignment="CENTER">
+         <font>
+            <Font name="NanumSquare Regular" size="15.0" />
+         </font>
+      </Button>
+      <ListView fx:id="html_tags" editable="true" layoutX="5.0" layoutY="53.0" onMouseClicked="#showWebView" prefHeight="416.0" prefWidth="132.0" styleClass="htmlList" stylesheets="@style.css" />
+      <WebView fx:id="webView" layoutX="141.0" layoutY="53.0" prefHeight="416.0" prefWidth="673.0" styleClass="webView" stylesheets="@style.css" />
+      <Button fx:id="btn_click1" layoutX="414.0" layoutY="476.0" mnemonicParsing="false" onAction="#handleAction1" prefHeight="40.0" prefWidth="402.0" styleClass="category" stylesheets="@style.css" text="CSS" textAlignment="CENTER">
+         <font>
+            <Font name="NanumSquare Regular" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="163.0" fitWidth="197.0" layoutX="384.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true" style="=: #;" visible="false">
+         <image>
+            <Image url="@img_keyword_no_result_choi-1b5166128958c27b3c6ff76ed511eba5.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
